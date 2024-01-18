@@ -1,0 +1,99 @@
+main
+    width: 90%
+    padding: 20px
+    border-radius: 10px
+    background: $very-pale-orange
+    margin: 0 auto 50px
+    @media (min-width: 500px)
+        max-width: 65%
+    @media (min-width: 700px)
+        max-width: 50%
+    @media (min-width: 1000px)
+        max-width: 40%
+    @media (min-width: 1440px)
+        max-width: 38%
+        padding: 30px 44px
+        border-radius: 20px
+        letter-spacing: 1px
+        margin-bottom: 180px
+
+.main__title
+    font:
+        size: 1.5em
+        weight: 700
+    color: $dark-brown
+    margin-bottom: 18px
+    @media (min-width: 1440px)
+        font-size: 2em
+        margin-bottom: 28px
+
+.main__days
+    display: flex
+    justify-content: space-between
+    text-align: center
+    margin-bottom: 20px
+    align-items: flex-end
+    @media (min-width: 1440px)
+        margin-bottom: 30px
+
+.day__container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.day__hover-amount
+    background: $dark-brown
+    color: $very-pale-orange
+    border-radius: 3px
+    padding: 5px
+    font-size: .7em
+    font-weight: 700
+    margin-bottom: 5px
+    visibility: hidden
+
+.day__bar
+    width: 32px
+    border-radius: 3px
+    margin-bottom: 10px
+    @media (min-width: 1440px)
+        width: 50px
+        border-radius: 5px
+
+.day__name
+    font-size: .8em
+    color: $medium-brown
+    @media (min-width: 1440px)
+        font-size: .9em
+
+hr
+    content: " "
+    border: 1px solid $cream
+    margin-bottom: 20px
+    @media (min-width: 1440px)
+        margin-bottom: 30px
+
+.lower-section__header
+    font-size: .9em
+    color: $medium-brown
+    @media (min-width: 1440px)
+        font-size: 1.1em
+
+.lower-section__flex-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.lower-section__amount
+    font:
+        size: 1.8em
+        weight: 700
+    color: $dark-brown
+    @media (min-width: 1440px)
+        font-size: 3em
+
+.lower-section__changed
+    font-weight: bold
+    color: $dark-brown
+    text-align: right
+    @media (min-width: 1440px)
+        font-size: 1.1em
