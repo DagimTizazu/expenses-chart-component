@@ -32,15 +32,22 @@ function WeekDays({ day, barAmount }) {
 
   return (
     <div className='day__container' onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      
       <p className='day__hover-amount' style={{
         visibility: isHovering ? 'visible' : 'hidden' 
-      }}>${barAmount}</p>
+      }}>
+        ${barAmount}
+      </p>
+
       <div className='day__bar' style={{
         backgroundColor: bgColor,
         height: (Math.round(barAmount) * 3) + 'px',
         opacity: isHovering ? '70%' : '100%'
-          }}></div>
-          <p className='day__name'>{day}</p>
+        }}>
+      </div>
+
+      <p className='day__name'>{day}</p>
+      
     </div>
   )
 }

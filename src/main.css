@@ -80,6 +80,12 @@ main {
   border-radius: 10px;
   background: hsl(33, 100%, 98%);
   margin: 0 auto 50px;
+  overflow: visible;
+}
+@media (max-width: 375px) {
+  main {
+    overflow: scroll;
+  }
 }
 @media (min-width: 500px) {
   main {
@@ -121,7 +127,7 @@ main {
 
 .main__days {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
   margin-bottom: 20px;
   align-items: flex-end;
@@ -129,6 +135,7 @@ main {
 @media (min-width: 1440px) {
   .main__days {
     margin-bottom: 30px;
+    gap: 20px;
   }
 }
 
@@ -183,7 +190,7 @@ hr {
 }
 
 .lower-section__header {
-  font-size: 0.9em;
+  font-size: 0.95em;
   color: hsl(28, 10%, 53%);
 }
 @media (min-width: 1440px) {

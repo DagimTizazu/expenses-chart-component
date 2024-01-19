@@ -8,13 +8,15 @@ function MainContent({ thisMonth, compareLastMonth }) {
         <h1 className='main__title'>Spending - Last 7 days</h1>
 
         <div className='main__days'>
+        
           {
             data.map((data, i) => (
               <WeekDays key={i} day={data.day} barAmount={data.amount} />
             ))
           }
-            
+  
         </div>
+      
         <hr />
 
         <div className='lower-section'>
@@ -22,17 +24,18 @@ function MainContent({ thisMonth, compareLastMonth }) {
         
           <div className='lower-section__flex-container'>
           
-              <div>
-                <p className='lower-section__amount'>${thisMonth}</p>
-              </div>
+            <div>
+              <p className='lower-section__amount'>${thisMonth}</p>
+            </div>
 
-              <div>
-                <p className='lower-section__changed'>{compareLastMonth}</p>
-                <p className='lower-section__header'>from last month</p>
-              </div>
+            <div>
+              <p className='lower-section__changed'>{compareLastMonth}</p>
+              <p className='lower-section__header'>from last month</p>
+            </div>
     
           </div>
         </div>
+      
     </main>
   )
 }
