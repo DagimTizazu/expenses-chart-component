@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live site](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/expenseschartcomponent-9rC2FlEcWe)
+- Live Site URL: [Live site](https://expenses-chart-component-two-orcin.vercel.app/)
 
 ## My process
 
